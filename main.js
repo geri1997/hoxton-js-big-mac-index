@@ -19,26 +19,53 @@ let swedenIndex = (us_swedenActualExchangeRate - us_swedenMacRate)/us_swedenMacR
 let norwayIndex = (us_norwayActualExchangeRate - us_norwayMacRate)/us_norwayMacRate *100;
 let israelIndex = (us_israelActualExchangeRate - us_israelMacRate)/us_israelMacRate * 100;
 let canadaIndex = (us_canadaActualExchangeRate - us_canadaMacRate)/us_canadaMacRate *100;
+let swissInfo;
+let swedenInfo;
+let norwayInfo;
+let israelInfo;
+let canadaInfo;
 if(swissIndex<0){
-    swissIndex = -swissIndex
+    swissIndex = -swissIndex;
+    swissInfo = "The Swiss Franc is " + swissIndex.toFixed(2) + "% overvalued compared to USD"
+}else{
+    swissInfo = "The Swiss Franc is " + swissIndex.toFixed(2) + "% undervalued compared to USD"
 }
 if(swedenIndex<0){
     swedenIndex = -swedenIndex
+    swedenInfo = "The Swedish Krona is " + swedenIndex.toFixed(2) + "% overvalued compared to USD"
+}else{
+    swedenInfo = "The Swedish Krona is " + swedenIndex.toFixed(2) + "% undervalued compared to USD"
 }
 if(norwayIndex<0){
     norwayIndex=-norwayIndex
+    norwayInfo = "The Norwegian Krone is " + norwayIndex.toFixed(2) + "% overvalued compared to USD"
+}else{
+    norwayInfo = "The Norwegian Krone is " + norwayIndex.toFixed(2) + "% undervalued compared to USD"
+
 }
 if(israelIndex<0){
     israelIndex = -israelIndex
+    israelInfo = "The Israeli New Shekel is " + israelIndex.toFixed(2) + "% overvalued compared to USD"
+}else{
+    israelInfo = "The Israeli New Shekel is " + israelIndex.toFixed(2) + "% undervalued compared to USD"
 }
 if(canadaIndex<0){
     canadaIndex = -canadaIndex
+    canadaInfo = "The Canadian Dollar is " + canadaIndex.toFixed(2) + "% overvalued compared to USD"
+}else{
+    canadaInfo = "The Canadian Dollar is " + canadaIndex.toFixed(2) + "% undervalued compared to USD"
 }
 
 
 
-console.log("The Swiss Franc is " + swissIndex.toFixed(2) + '% overvalued compared to USD')
-console.log("The Swedish Krona is " + swedenIndex.toFixed(2) + '% overvalued compared to USD')
-console.log("The Norwegian Krone is " + norwayIndex.toFixed(2) + '% overvalued compared to USD')
-console.log("The Israeli New Shekel is " + israelIndex.toFixed(2) + '% undervalued compared to USD')
-console.log("The Canadian Dollar is " + canadaIndex.toFixed(2) + '% undervalued compared to USD')
+// console.log("The Swiss Franc is " + swissIndex.toFixed(2) + '% overvalued compared to USD')
+// console.log("The Swedish Krona is " + swedenIndex.toFixed(2) + '% overvalued compared to USD')
+// console.log("The Norwegian Krone is " + norwayIndex.toFixed(2) + '% overvalued compared to USD')
+// console.log("The Israeli New Shekel is " + israelIndex.toFixed(2) + '% undervalued compared to USD')
+// console.log("The Canadian Dollar is " + canadaIndex.toFixed(2) + '% undervalued compared to USD')
+
+console.log(swissInfo);
+console.log(swedenInfo);
+console.log(norwayInfo);
+console.log(israelInfo);
+console.log(canadaInfo);
