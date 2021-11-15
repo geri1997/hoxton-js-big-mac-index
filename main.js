@@ -22,8 +22,8 @@ let canadaIndex = (us_canadaActualExchangeRate - us_canadaMacRate)/us_canadaMacR
 
 
 
-console.log("Switzerland Big Mac Index: " + swissIndex)
-console.log("Sweden Big Mac Index: " + swedenIndex)
-console.log("Norway Big Mac Index: " + norwayIndex)
-console.log("Israel Big Mac Index: " + israelIndex)
-console.log("Canada Big Mac Index: " + canadaIndex)
+console.log("Switzerland Big Mac Index: " + swissIndex + '%')
+console.log("Sweden Big Mac Index: " + swedenIndex + '%')
+console.log("Norway Big Mac Index: " + norwayIndex + '%')
+console.log("Israel Big Mac Index: " + israelIndex + '%')
+console.log("Canada Big Mac Index: " + canadaIndex + '%')
