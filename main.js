@@ -22,8 +22,8 @@ let canadaIndex = (us_canadaActualExchangeRate - us_canadaMacRate)/us_canadaMacR
 
 
 
-console.log("Switzerland Big Mac Index: " + swissIndex + '%')
-console.log("Sweden Big Mac Index: " + swedenIndex + '%')
-console.log("Norway Big Mac Index: " + norwayIndex + '%')
-console.log("Israel Big Mac Index: " + israelIndex + '%')
-console.log("Canada Big Mac Index: " + canadaIndex + '%')
+console.log("The Swiss Franc is " + swissIndex + '% overvalued compared to USD')
+console.log("The Swedish Krona is " + swedenIndex + '% overvalued compared to USD')
+console.log("The Norwegian Krone is " + norwayIndex + '% overvalued compared to USD')
+console.log("The Israeli New Shekel is " + israelIndex + '% undervalued compared to USD')
+console.log("The Canadian Dollar is " + canadaIndex + '% undervalued compared to USD')
