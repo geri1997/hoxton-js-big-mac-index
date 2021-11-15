@@ -25,42 +25,39 @@ let norwayInfo;
 let israelInfo;
 let canadaInfo;
 if(swissIndex<0){
-    swissIndex = -swissIndex;
-    swissInfo = "The Swiss Franc is " + swissIndex.toFixed(2) + "% overvalued compared to USD"
+    
+    swissInfo = "The Swiss Franc is " + -swissIndex.toFixed(2) + "% overvalued compared to USD"
 }else{
     swissInfo = "The Swiss Franc is " + swissIndex.toFixed(2) + "% undervalued compared to USD"
 }
 if(swedenIndex<0){
-    swedenIndex = -swedenIndex
-    swedenInfo = "The Swedish Krona is " + swedenIndex.toFixed(2) + "% overvalued compared to USD"
+    swedenInfo = "The Swedish Krona is " + -swedenIndex.toFixed(2) + "% overvalued compared to USD"
 }else{
     swedenInfo = "The Swedish Krona is " + swedenIndex.toFixed(2) + "% undervalued compared to USD"
 }
 if(norwayIndex<0){
-    norwayIndex=-norwayIndex
-    norwayInfo = "The Norwegian Krone is " + norwayIndex.toFixed(2) + "% overvalued compared to USD"
+    
+    norwayInfo = "The Norwegian Krone is " + -norwayIndex.toFixed(2) + "% overvalued compared to USD"
 }else{
     norwayInfo = "The Norwegian Krone is " + norwayIndex.toFixed(2) + "% undervalued compared to USD"
 
 }
 if(israelIndex<0){
-    israelIndex = -israelIndex
-    israelInfo = "The Israeli New Shekel is " + israelIndex.toFixed(2) + "% overvalued compared to USD"
+    israelInfo = "The Israeli New Shekel is " + -israelIndex.toFixed(2) + "% overvalued compared to USD"
 }else{
     israelInfo = "The Israeli New Shekel is " + israelIndex.toFixed(2) + "% undervalued compared to USD"
 }
 if(canadaIndex<0){
-    canadaIndex = -canadaIndex
-    canadaInfo = "The Canadian Dollar is " + canadaIndex.toFixed(2) + "% overvalued compared to USD"
+    canadaInfo = "The Canadian Dollar is " + -canadaIndex.toFixed(2) + "% overvalued compared to USD"
 }else{
     canadaInfo = "The Canadian Dollar is " + canadaIndex.toFixed(2) + "% undervalued compared to USD"
 }
 
 
 
-// console.log("The Swiss Franc is " + swissIndex.toFixed(2) + '% overvalued compared to USD')
-// console.log("The Swedish Krona is " + swedenIndex.toFixed(2) + '% overvalued compared to USD')
-// console.log("The Norwegian Krone is " + norwayIndex.toFixed(2) + '% overvalued compared to USD')
+// console.log("The Swiss Franc is " + -swissIndex.toFixed(2) + '% overvalued compared to USD')
+// console.log("The Swedish Krona is " + -swedenIndex.toFixed(2) + '% overvalued compared to USD')
+// console.log("The Norwegian Krone is " + -norwayIndex.toFixed(2) + '% overvalued compared to USD')
 // console.log("The Israeli New Shekel is " + israelIndex.toFixed(2) + '% undervalued compared to USD')
 // console.log("The Canadian Dollar is " + canadaIndex.toFixed(2) + '% undervalued compared to USD')
 
@@ -69,3 +66,18 @@ console.log(swedenInfo);
 console.log(norwayInfo);
 console.log(israelInfo);
 console.log(canadaInfo);
+
+
+swissIndex<swedenIndex?console.log('Switzerland BMI > Sweden BMI'):console.log('Switzerland BMI < Sweden BMI');
+swissIndex<norwayIndex?console.log('Switzerland BMI > Norway BMI'):console.log('Switzerland BMI < Norway BMI');
+swissIndex<israelIndex?console.log('Switzerland BMI > Israel BMI'):console.log('Switzerland BMI < Israel BMI');
+swissIndex<canadaIndex?console.log('Switzerland BMI > Canada BMI'):console.log('Switzerland BMI < Canada BMI');
+
+swedenIndex<norwayIndex?console.log('Sweden BMI > Norway BMI'):console.log('Sweden BMI < Norway BMI');
+swedenIndex<israelIndex?console.log('Sweden BMI > Israel BMI'):console.log('Sweden BMI < Israel BMI');
+swedenIndex<canadaIndex?console.log('Sweden BMI > Canada BMI'):console.log('Sweden BMI < Canada BMI');
+
+norwayIndex<israelIndex?console.log('Norway BMI > Israel BMI'):console.log('Norway BMI < Israel BMI');
+norwayIndex<canadaIndex?console.log('Norway BMI > Canada BMI'):console.log('Norway BMI < Canada BMI');
+
+israelIndex<canadaIndex?console.log('Israel BMI > Canada BMI'):console.log('Israel BMI < Canada BMI');
