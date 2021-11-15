@@ -19,11 +19,26 @@ let swedenIndex = (us_swedenActualExchangeRate - us_swedenMacRate)/us_swedenMacR
 let norwayIndex = (us_norwayActualExchangeRate - us_norwayMacRate)/us_norwayMacRate *100;
 let israelIndex = (us_israelActualExchangeRate - us_israelMacRate)/us_israelMacRate * 100;
 let canadaIndex = (us_canadaActualExchangeRate - us_canadaMacRate)/us_canadaMacRate *100;
+if(swissIndex<0){
+    swissIndex = -swissIndex
+}
+if(swedenIndex<0){
+    swedenIndex = -swedenIndex
+}
+if(norwayIndex<0){
+    norwayIndex=-norwayIndex
+}
+if(israelIndex<0){
+    israelIndex = -israelIndex
+}
+if(canadaIndex<0){
+    canadaIndex = -canadaIndex
+}
 
 
 
-console.log("The Swiss Franc is " + -swissIndex + '% overvalued compared to USD')
-console.log("The Swedish Krona is " + -swedenIndex + '% overvalued compared to USD')
-console.log("The Norwegian Krone is " + -norwayIndex + '% overvalued compared to USD')
-console.log("The Israeli New Shekel is " + israelIndex + '% undervalued compared to USD')
-console.log("The Canadian Dollar is " + canadaIndex + '% undervalued compared to USD')
+console.log("The Swiss Franc is " + swissIndex.toFixed(2) + '% overvalued compared to USD')
+console.log("The Swedish Krona is " + swedenIndex.toFixed(2) + '% overvalued compared to USD')
+console.log("The Norwegian Krone is " + norwayIndex.toFixed(2) + '% overvalued compared to USD')
+console.log("The Israeli New Shekel is " + israelIndex.toFixed(2) + '% undervalued compared to USD')
+console.log("The Canadian Dollar is " + canadaIndex.toFixed(2) + '% undervalued compared to USD')
